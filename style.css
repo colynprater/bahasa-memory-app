@@ -23,6 +23,28 @@ h1 {
   display: none;
 }
 
+ul {
+  font-family: 'AvenirNextLTPro-Bold', sans-serif;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline;
+}
+
+.category-btn {
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  padding: 12px;
+  font-weight: 900;
+  margin: 6px;
+}
+
+.selected {
+  background-color: purple;
+}
+
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {

@@ -9,12 +9,40 @@ $(document).ready(function() {
       showAnswer()
     }
   })
+
+  $('.category-btn').click(function() {
+    var clickedButton = $(this)
+    var category = clickedButton.data('category')
+
+    selectCategory(clickedButton)
+  })
 })
+
+function selectCategory(clickedButton) {
+  $('.category-btn').removeClass('selected')
+  clickedButton.addClass('selected')
+}
+
+function returnTranslations() {
+  var selectedCategoryButton = $('.category-btn.selected')
+
+  if ( selectedCategoryButton.length ) {
+    // return only translation from specific category
+    var category = selectedCategoryButton.data('category')
+    var $container = $(".translation-container[data-category*='" + category + "']")
+
+    return $container.children('.translation')
+  } else {
+    // return any translation
+    return $('.translation')
+  }
+
+}
 
 function askQuestion() {
   $('.instructions').html('Tap anywhere to reveal the word in English')
 
-  var $translations = $('.translation')
+  var $translations = returnTranslations()
   var randomNumber = Math.floor(Math.random() * $translations.length) + 1
   var $translation = $translations.get(randomNumber)
 
