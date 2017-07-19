@@ -12,7 +12,7 @@ $(document).ready(function() {
 })
 
 function askQuestion() {
-  $('.instructions').html('Tap anywhere to reveal the answer')
+  $('.instructions').html('Tap anywhere to reveal the word in English')
 
   var $translations = $('.translation')
   var randomNumber = Math.floor(Math.random() * $translations.length) + 1
