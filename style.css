@@ -1,0 +1,48 @@
+.main {
+  text-align: center;
+  padding-top: 20%;
+  font-family: 'AvenirNextLTPro-Bold',sans-serif;
+  height: 600px;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 45px;
+  display: inline;
+  margin: 10px;
+}
+
+.instructions {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 82px;
+}
+
+.step {
+  display: none;
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .main {
+    text-align: center;
+    padding-top: 80%;
+    font-family: 'AvenirNextLTPro-Bold',sans-serif;
+    height: 1800px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 45px;
+    display: inline;
+    margin: 10px;
+  }
+
+  .instructions {
+    margin-top: 82px;
+    font-size: 20px;
+    font-weight: 100;
+  }
+}
