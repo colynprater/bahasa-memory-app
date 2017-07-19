@@ -18,10 +18,13 @@ function askQuestion() {
   var randomNumber = Math.floor(Math.random() * $translations.length) + 1
   var $translation = $translations.get(randomNumber)
 
-  $('.question').html($translation.dataset.english + ':')
-  $('.answer').html(wordClue($translation.dataset.indo.length))
+  var englishWord = $translation.dataset.english
+  var indoWord = $translation.dataset.indo
 
-  embedQuestionAndAnswer($translation.dataset.english, $translation.dataset.indo)
+  $('.question').html(englishWord + ':')
+  $('.answer').html(wordClue(indoWord.length))
+
+  embedQuestionAndAnswer(englishWord, indoWord)
   setStepTo(2)
 }
 
