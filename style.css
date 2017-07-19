@@ -42,7 +42,7 @@ ul li {
 }
 
 .selected {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(220, 220, 220);
 }
 
 @media only screen
@@ -52,7 +52,7 @@ and (max-device-width : 667px) {
     text-align: center;
     padding-top: 60%;
     font-family: 'AvenirNextLTPro-Bold',sans-serif;
-    height: 1800px;
+    height: 950px;
     width: 100%;
   }
 

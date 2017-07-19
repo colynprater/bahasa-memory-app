@@ -44,7 +44,7 @@ function returnTranslations() {
 }
 
 function askQuestion() {
-  $('.instructions').html('Tap anywhere to reveal the word in English')
+  $('.instructions').html('Tap anywhere to reveal the word in Indonesian')
 
   var $translations = returnTranslations()
   var randomNumber = Math.floor(Math.random() * $translations.length) + 1
