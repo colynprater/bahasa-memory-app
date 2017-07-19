@@ -19,8 +19,12 @@ $(document).ready(function() {
 })
 
 function selectCategory(clickedButton) {
-  $('.category-btn').removeClass('selected')
-  clickedButton.addClass('selected')
+  if ( !clickedButton.hasClass('selected') ) {
+    $('.category-btn').removeClass('selected')
+    clickedButton.addClass('selected')
+  } else {
+    clickedButton.removeClass('selected')
+  }
 }
 
 function returnTranslations() {

@@ -1,6 +1,6 @@
 .main {
   text-align: center;
-  padding-top: 20%;
+  padding-top: 16%;
   font-family: 'AvenirNextLTPro-Bold', sans-serif;
   height: 600px;
   width: 100%;
@@ -42,7 +42,7 @@ ul li {
 }
 
 .selected {
-  background-color: purple;
+  background-color: rgb(240, 240, 240);
 }
 
 @media only screen
