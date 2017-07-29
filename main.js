@@ -80,7 +80,7 @@ function setStepTo(stepNumber) {
 function wordClue(word) {
   var clue = ''
 
-  for (var i = 0, len = word.length; i < len; i++) {
+  for (var i = 0; i < word.length; i++) {
     if (word[i] == ' ') {
       clue += '  '
     } else {
