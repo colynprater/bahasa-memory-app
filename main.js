@@ -54,7 +54,7 @@ function askQuestion() {
   var indoWord = $translation.dataset.indo
 
   $('.question').html(englishWord + ':')
-  $('.answer').html(wordClue(indoWord.length))
+  $('.answer').html(wordClue(indoWord))
 
   embedQuestionAndAnswer(englishWord, indoWord)
   setStepTo(2)
@@ -77,7 +77,16 @@ function setStepTo(stepNumber) {
   $('.step').data('step', stepNumber)
 }
 
-function wordClue(length) {
-  var clue = '_ '.repeat(length)
+function wordClue(word) {
+  var clue = ''
+
+  for (var i = 0, len = word.length; i < len; i++) {
+    if (word[i] == ' ') {
+      clue += '  '
+    } else {
+      clue += '_ '
+    }
+  }
+
   return clue
 }

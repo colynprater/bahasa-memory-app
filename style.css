@@ -45,6 +45,10 @@ ul li {
   background-color: rgb(220, 220, 220);
 }
 
+.answer {
+  white-space: pre;
+}
+
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
